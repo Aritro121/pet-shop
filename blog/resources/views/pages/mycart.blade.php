@@ -6,8 +6,24 @@
     <title>Shopping Cart</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-300 min-h-screen flex justify-center items-center font-sans">
-    <div class="flex flex-wrap h-[75vh] w-11/12 max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
+<body class="bg-gray-300 min-h-screen font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white p-4">
+        <div class="flex justify-between items-center">
+            <a href="{{url('/')}}" class="navbar-brand d-none d-lg-block">
+                <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet</span>Kit</h1>
+            </a>
+            <ul class="flex space-x-4">
+                <li><a href="{{url('/')}}" class="hover:underline">Home</a></li>
+                <li><a href="{{url('/shop')}}" class="hover:underline">Products</a></li>
+                <li><a href="{{url('/contact')}}" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-wrap h-[75vh] w-11/12 max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden mx-auto mt-8">
         <!-- Cart Section -->
         <div class="w-full md:w-1/2 p-6 bg-white overflow-y-auto">
             <h4 class="text-lg font-bold mb-6">Shopping Cart</h4>
@@ -65,6 +81,13 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-4 mt-8">
+        <div class="text-center">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>

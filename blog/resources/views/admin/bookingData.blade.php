@@ -28,7 +28,6 @@
                         <tr>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Name</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                            <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Description</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Service</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Date</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">User</th>
@@ -40,7 +39,6 @@
                         <tr>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->name }}</td>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->email }}</td>
-                            <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->description }}</td>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->service->title ?? 'N/A' }}</td>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->date }}</td>
                             <td>

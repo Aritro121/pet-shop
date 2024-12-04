@@ -68,8 +68,11 @@
                             </td>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->title }}</td>
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->price }}</td>
-                            <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->subtitle }}</td>
-                            <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->description }}</td>
+                            <td style="padding: 8px 16px; max-width: 300px;">{{ $item->subtitle }}</td>
+                            <td style="padding: 8px 16px; max-width: 300px;">
+                                {{ $item->description }}
+                            </td>
+                            
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">
                                 
                                 <a href="{{ route('productEdit', $item->id) }}" class="text-blue-500 hover:text-blue-700">

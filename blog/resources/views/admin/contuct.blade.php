@@ -55,6 +55,7 @@
                         <tr>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Title</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">E-mail</th>
+                            <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Date</th>
                             <th class="px-4 py-2 md:px-6 md:py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Message</th>
                             
                         </tr>
@@ -65,7 +66,8 @@
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->name }}</td>
                             {{-- <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->subtitle }}</td> --}}
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->email }}</td>
-                            <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->message }}</td>
+                            <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">{{ $item->created_at }}</td>
+                            <td style="padding: 8px 16px; max-width: 300px;">{{ $item->message }}</td>
                             
                             <td class="px-4 py-2 md:px-6 md:py-4 whitespace-nowrap">
                                 <div class="flex space-x-2">

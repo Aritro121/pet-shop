@@ -125,5 +125,5 @@ Route::get('/admin/team-list', [TeamController::class, 'teamList'])->name('teamL
 Route::get('/admin/team-delete/{id}', [TeamController::class, 'deleteTeam'])->name('deleteTeam')->middleware('admin');
 
 //contuct
-Route::post('/contuct-data', [ContuctController::class, 'contuctData'])->name('contuctData');
-Route::get('/admin/contuct-list', [ContuctController::class, 'ContactList'])->name('ContactList');
+Route::post('/contuct-data', [ContuctController::class, 'contuctData'])->name('contuctData')->middleware('user');
+Route::get('/admin/contuct-list', [ContuctController::class, 'ContactList'])->name('ContactList')->middleware('admin');
